@@ -84,7 +84,7 @@ if (isset($_GET['acao'])) {
     }
 }
 
-// Processar o formulário de login
+// Processar o formulário de login e senha
 if (isset($_POST['login'])) {
     $login = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
     $senha = filter_input(INPUT_POST, 'senha', FILTER_DEFAULT);
