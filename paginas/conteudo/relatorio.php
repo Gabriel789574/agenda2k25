@@ -99,9 +99,7 @@
                   </tr>
                   </tfoot>
                 </table>
-                <div class="col-lg-12 d-flex justify-content-center">
-                  <a href="conteudo/relatoriopdf.php?id=<?php echo $id_user;?>" class="btn btn-lg btn-primary">Gerar relatório completo</a>
-                </div>
+                
                 </div>
               <!-- /.card-body -->
             </div>
@@ -123,4 +121,5 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+  
   
