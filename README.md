@@ -1,68 +1,85 @@
-# 📅 Agenda Eletrônica com PHP e PDO
+# 📅 agenda2K25
 
-Bem-vindo ao projeto de **Agenda Eletrônica**, uma solução desenvolvida em PHP procedural com PDO que simplifica o gerenciamento de contatos de forma segura e eficiente. Com um design moderno baseado no tema **Admin LTE**, este sistema oferece uma interface intuitiva e responsiva, ideal para atender às necessidades de usuários que buscam praticidade no seu dia a dia.
+![PHP](https://img.shields.io/badge/PHP-7.4%2B-777BB4?logo=php)
+![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-4479A1?logo=mysql)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-4.6-7952B3?logo=bootstrap)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Version](https://img.shields.io/badge/Version-2.0.0-blue)
 
-## 🎯 Recursos Principais
+Um sistema completo de gerenciamento de contatos desenvolvido em PHP procedural com PDO, utilizando o tema Admin LTE para uma interface moderna e responsiva.
 
-- **Área de Login e Cadastro**
-  - **Segurança em Primeiro Lugar:** Proteção total com senhas criptografadas.
-  - **Cadastro de Usuários:** Facilite o registro de novos usuários com um link simples e direto.
+## 🎯 Demonstração
 
-- **Gerenciamento de Contatos Personalizado**
-  - **Acesso Individualizado:** Cada usuário gerencia seus próprios contatos, com total privacidade.
-  - **Informações de Contato:** Cadastre e visualize nome, telefone e e-mail de forma fácil.
+**Acesso Online:** [Clique aqui para acessar a demo](http://localhost/agenda2k25)  
 
-- **Página de Perfil Personalizável**
-  - **Edição Completa de Dados:** Atualize todas as suas informações, incluindo a foto de perfil.
-  - **Facilidade de Uso:** Interface simples e intuitiva para edição de perfil.
+## ✨ Funcionalidades Principais
 
-- **Relatórios e Exportações**
-  - **Visualização Avançada com DataTable:** Tabelas dinâmicas para organizar e buscar informações.
-  - **Exportação Simplificada:** Gere relatórios em PDF ou exporte seus contatos para uma planilha.
+### 🔐 Autenticação Segura
+- ✅ Login com validação e sessões seguras
+- ✅ Cadastro de novos usuários
+- ✅ Recuperação de senha (simulada)
+- ✅ Logout automático por inatividade
+- ✅ Senhas criptografadas com bcrypt
 
-## 🛠️ Tecnologias Utilizadas
+### 👥 Gerenciamento de Contatos
+- ✅ **CRUD Completo:** Criar, ler, atualizar e excluir contatos
+- ✅ **Upload de Fotos:** Adicione fotos aos contatos
+- ✅ **Categorias:** Organize por família, amigos, trabalho, etc.
+- ✅ **Favoritos:** Marque contatos importantes
+- ✅ **Busca Avançada:** Encontre por nome, telefone, email
+  
 
-- **Backend:** PHP procedural com PDO.
-- **Banco de Dados:** MySQL.
-- **Frontend:** HTML, CSS e JavaScript utilizando o tema **Admin LTE**.
+### 👤 Perfil do Usuário
+- ✅ Edição de dados pessoais
+- ✅ Upload de foto de perfil
+- ✅ Alteração de senha segura
+- ✅ Dashboard personalizado
+- ✅ Histórico de atividades
 
-## 📚 Como Instalar no Servidor Local
+### 📊 Relatórios & Exportação
+- ✅ **DataTables:** Tabelas interativas com ordenação e busca
+- ✅ **Exportação CSV:** Exporte contatos para Excel
+- ✅ **Estatísticas:** Gráficos de uso (Chart.js)
+- ✅ **Logs do Sistema:** Auditoria completa
+- ✅ **Dashboard:** Métricas em tempo real
 
-1. **Clone o repositório:**
+### 🎨 Interface Moderna
+- ✅ **Admin LTE 3:** Template profissional
+- ✅ **Totalmente Responsivo:** Mobile, tablet, desktop
+- ✅ **Ícones Font Awesome 6**
+- ✅ **Alertas Toast:** Notificações elegantes
+- ✅ **Modais Bootstrap:** Diálogos modernos
+- ✅ **Menu Lateral:** Colapsável e intuitivo
 
-    ```bash
-    git clone https://github.com/leandro-oe/new_agenda_2024.git
-    ```
+## 🛠️ Tecnologias
 
-2. **Configure o ambiente local:**
-   - Certifique-se de que você tem um servidor local como [XAMPP](https://www.apachefriends.org/), [WAMP](https://www.wampserver.com/), ou [MAMP](https://www.mamp.info/), que incluem Apache, PHP e MySQL.
-   - Coloque os arquivos do projeto dentro da pasta `htdocs` (XAMPP) ou `www` (WAMP).
+### Backend
+- **PHP 7.4+** com PDO
+- **MySQL 5.7+** ou MariaDB 10.2+
+- **Apache 2.4+** com mod_rewrite
 
-3. **Configure o banco de dados:**
-   - Inicie o servidor MySQL através do painel de controle do seu servidor local.
-   - Acesse o phpMyAdmin (geralmente em `http://localhost/phpmyadmin`).
-   - Crie um banco de dados com o nome desejado.
-   - Importe o arquivo `new_agenda.sql` disponível no projeto para criar as tabelas necessárias.
+### Frontend
+- **HTML5** semântico
+- **CSS3** com Bootstrap 4.6
+- **JavaScript** (ES6+)
+- **jQuery 3.6**
+- **Admin LTE 3.2**
+- **Font Awesome 6**
+- **DataTables 1.13**
+- **Chart.js 4.3** (opcional)
 
-4. **Atualize as configurações de conexão com o banco de dados:**
-   - Edite o arquivo `config.php` com as informações do seu banco de dados (host, usuário, senha e nome do banco).
+### Ferramentas de Desenvolvimento
+- **XAMPP** (ambiente local)
+- **phpMyAdmin** (gerenciamento MySQL)
+- **Git** (controle de versão)
+- **VS Code** (editor recomendado)
 
-5. **Acesse o sistema:**
-   - Abra o navegador e acesse `http://localhost/nome-do-repositorio`, onde `nome-do-repositorio` é o nome da pasta onde o projeto foi colocado.
+## 📋 Requisitos do Sistema
 
-## 🎨 Tema e Interface
-
-Este projeto utiliza o tema **Admin LTE** para proporcionar uma experiência visual moderna e responsiva.
-
-## 📄 Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
-### Resumo sobre a licença MIT
-
-A licença MIT permite o uso livre do software, incluindo modificação e distribuição, desde que o aviso de copyright seja mantido. O software é fornecido "como está", sem garantias e sem responsabilidade dos autores por eventuais problemas.
-
----
-
-**Pronto para começar?** Experimente esta Agenda Eletrônica e descubra uma nova forma de gerenciar seus contatos!
-
+### Requisitos Mínimos
+```yaml
+PHP: 7.4+
+MySQL: 5.7+
+Apache: 2.4+
+Memória PHP: 128MB
+Espaço em Disco: 100MB
